@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yakkun.myapplication.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#bbbbffff"
+        android:layout_gravity="top|center_horizontal"
+        android:orientation="horizontal"
+        app:layout_anchor="@+id/include2"
+        app:layout_anchorGravity="bottom|center_horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/button_stop_save"
+            android:layout_width="80dp"
+            android:layout_height="115dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/button_state"
+            android:text="立ち状態を保存"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button_walk_save"
+            android:layout_width="80dp"
+            android:layout_height="115dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/button_state"
+            android:text="歩き状態を保存"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button_run_save"
+            android:layout_width="80dp"
+            android:layout_height="115dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/button_state"
+            android:text="走り状態を保存"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20sp"
+        android:textColor="#00f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/text_view1"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20sp"
+        android:textColor="#00f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/content_main" />
+
+    <Button
+        android:id="@+id/stop_save"
+        android:layout_width="90dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="345dp"
+        android:background="@drawable/button_state"
+        android:text="保存停止"
+        android:textSize="20sp"
+        app:layout_anchor="@+id/include2"
+        app:layout_anchorGravity="center_vertical|center_horizontal" />
+
+    <Button
+        android:id="@+id/delete_file"
+        android:layout_width="90dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="445dp"
+        android:background="@drawable/button_state"
+        android:text="ファイル削除"
+        android:textSize="20sp"
+        app:layout_anchor="@+id/include2"
+        app:layout_anchorGravity="center_vertical|center_horizontal" />
+
+    <Button
+        android:id="@+id/arff_save"
+        android:layout_width="90dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginRight="280dp"
+        android:layout_marginTop="445dp"
+        android:background="@drawable/button_state"
+        android:text="arff作成"
+        android:textSize="20sp"
+        app:layout_anchor="@+id/include2"
+        app:layout_anchorGravity="center_vertical|center_horizontal" />
+
+    <Button
+        android:id="@+id/send_button"
+        android:layout_width="90dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginRight="280dp"
+        android:layout_marginTop="345dp"
+        android:background="@drawable/button_state"
+        android:text="weka"
+        android:textSize="20sp"
+        app:layout_anchor="@+id/include2"
+        app:layout_anchorGravity="center_vertical|center_horizontal" />
+
+
+</android.support.design.widget.CoordinatorLayout>
